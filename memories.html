@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Precious Memories 📸</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== CONFETTI CANVAS ===================== -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ===================== EMOTIONAL HEARTS CANVAS ===================== -->
+  <!-- Gentle floating hearts behind the cards -->
+  <canvas id="hearts-canvas"></canvas>
+
+  <!-- ===================== MEMORY GALLERY ===================== -->
+  <section id="memories" class="section memories-section full-page">
+
+    <h2 class="section-title fade-in">Our Precious Memories 📸</h2>
+    <p class="section-subtitle fade-in">Hover to peek, click to hold a memory close 💕</p>
+    <p class="emotional-quote fade-in">"Some memories are unforgettable, remaining ever vivid and heartwarming."</p>
+
+    <div class="gallery-grid">
+
+      <!--
+        ========== MEMORY CARD TEMPLATE ==========
+        To change a memory:
+          1. Replace the <img src="..."> with your own photo path.
+          2. Edit the year and description on the back side.
+        To add more cards, copy one <div class="card-container"> block and paste it below.
+      -->
+
+      <!-- Card 1 -->
+      <div class="card-container fade-in" style="--tilt: -2deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <!-- CHANGE IMAGE: Replace the src below with your photo -->
+              <img src="/image/2014.jpeg" alt="2014" />
+            </div>
+            <p class="polaroid-caption">Styling Pose 🏖️</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2014</span>
+              <p class="memory-desc">jkhn amra dekhte kicota etim chilam.😁😁</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-container fade-in" style="--tilt: 1.5deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <img src="/image/2015.jpg" alt="2015" />
+            </div>
+            <p class="polaroid-caption">HI to Boro Apu🙋‍♂️</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2015</span>
+              <p class="memory-desc">video call e boro apuke jalaccilam boshe boshe r ammu ki ekta banaicilo aouke dekhai dekhai khaccilam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 (was Card 5) -->
+      <div class="card-container fade-in" style="--tilt: -1deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <img src="/image/2015.jpeg" alt="2015" />
+            </div>
+            <p class="polaroid-caption">✌️Pose</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2015</span>
+              <p class="memory-desc">a sweet memory with U. We were just having fun and making the sign, capturing a simple moment that now brings back all the joy and warmth of those days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 (was Card 3) -->
+      <div class="card-container fade-in" style="--tilt: 2.5deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <img src="/image/2016.jpeg" alt="2016" />
+            </div>
+            <p class="polaroid-caption">IN Eid 🌙</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2016</span>
+              <p class="memory-desc">Tkhn ektu gulumulu chilam r ki,, 1st tder sathe ammur hater cotpoti khaitam then sobaike salam korte jaitam...🌙</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 (was Card 4) -->
+      <div class="card-container fade-in" style="--tilt: -1.8deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <img src="/image/2018.jpeg" alt="2018" />
+            </div>
+            <p class="polaroid-caption">😐😐😐</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2018</span>
+              <p class="memory-desc">jekhane jaito khali cobi tulti r kunu kaj nai 💃</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card-container fade-in" style="--tilt: 1deg">
+        <div class="card">
+          <div class="card-front">
+            <div class="polaroid-tape"></div>
+            <div class="polaroid-img">
+              <img src="/image/2024.jpeg" alt="2024" />
+            </div>
+            <p class="polaroid-caption">Twinning Day 👯‍♀️</p>
+          </div>
+          <div class="card-back">
+            <div class="memory-info">
+              <span class="memory-year">2024</span>
+              <p class="memory-desc">Our matching outfits day  we're basically twins! 👯‍♀️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /gallery-grid -->
+
+    <!-- Navigation buttons -->
+    <div class="page-nav fade-in">
+      <a href="wish.html" class="btn-cute btn-secondary" aria-label="Back to Wish">
+        🏠 Back to Wish
+      </a>
+      <a href="note.html" class="btn-cute" aria-label="Read My Note">
+        💌 Read My Note
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Floating hearts container -->
+  <div id="click-hearts" aria-hidden="true"></div>
+
+  <!-- Warm background glow -->
+  <div class="warm-glow" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

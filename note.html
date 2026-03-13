@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Special Message For You 💌</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== CONFETTI CANVAS ===================== -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- ===================== SPECIAL MESSAGE ===================== -->
+  <section id="message" class="section message-section full-page">
+
+    <h2 class="section-title fade-in">A Special Message For You 💌</h2>
+
+    <button id="read-message-btn" class="btn-cute fade-in" aria-label="Read My Message">
+      💌 Read My Message
+    </button>
+
+    <!-- Modal overlay for the typewriter message -->
+    <div id="message-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Birthday message">
+      <div class="modal-content">
+        <button id="close-modal-btn" class="modal-close" aria-label="Close message">&times;</button>
+        <div class="modal-body">
+          <h3 class="modal-heading">Dear Chuto Apu,</h3>
+          <!--
+            CHANGE MESSAGE: Edit the text inside data-message below.
+            The typewriter effect will reveal it letter by letter.
+          -->
+          <p id="typewriter-text" class="typewriter" data-message="From the moment you came into my life, everything became brighter and more beautiful. You are not just my sister — you are my best friend, my secret keeper, and the one who makes every ordinary day feel special. On your birthday, I want you to know how incredibly proud I am of the person you've become. Your kindness, your laughter, and your strength inspire me every single day. I hope this year brings you endless joy, wonderful adventures, and all the love your heart can hold. Thank you for being YOU — the most amazing sister anyone could ever wish for. Happy Birthday, my dear! I love you more than words could ever say. 💖🎂✨"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="page-nav fade-in">
+      <a href="wish.html" class="btn-cute btn-secondary" aria-label="Back to Wish">
+        🏠 Back to Wish
+      </a>
+      <a href="memories.html" class="btn-cute" aria-label="View Memories">
+        📸 View Memories
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer fade-in">
+    <p>Made by Adnan 💖 just for you, sis!</p>
+  </footer>
+
+  <!-- Floating hearts container -->
+  <div id="click-hearts" aria-hidden="true"></div>
+
+  <!-- Warm background glow -->
+  <div class="warm-glow" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
