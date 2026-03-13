@@ -22,8 +22,4 @@ This project shows birthday wishes and some beautiful memories with interactive 
 This website was created as a personal project to make my sister feel special on her birthday.  
 The site includes a greeting page and a collection of our old memories presented in an interactive way.
 
-## 🚀 How to Run Locally
 
-1. Clone the repository
-```bash
-git clone https://github.com/your-username/your-repo-name.git
